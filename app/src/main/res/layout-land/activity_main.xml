@@ -29,14 +29,8 @@
 
             <TextView
                 android:id="@+id/country1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:padding="@dimen/padding"
-                android:text="@string/team_a"
-                android:textColor="@android:color/white"
-                android:textSize="@dimen/main_text_size"
-                android:textStyle="bold" />
+                style="@style/TeamStyle"
+                android:text="@string/team_a" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -54,19 +48,12 @@
 
                 <TextView
                     android:id="@+id/team_a_score"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="@dimen/margin_small"
+                    style="@style/StatsTextStle"
                     android:layout_marginLeft="@dimen/margin_big"
                     android:layout_marginStart="@dimen/margin_big"
-                    android:background="@color/colorPrimary"
-                    android:text="@string/inital_score"
-                    android:textColor="@android:color/black"
-                    android:textSize="@dimen/stats_text_size" />
+                    android:text="@string/inital_score" />
 
             </LinearLayout>
-
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -84,16 +71,10 @@
 
                 <TextView
                     android:id="@+id/team_a_faults"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="@dimen/margin_small"
+                    style="@style/StatsTextStle"
                     android:layout_marginLeft="@dimen/margin_big"
                     android:layout_marginStart="@dimen/margin_big"
-                    android:background="@color/colorPrimary"
-                    android:text="@string/inital_score"
-                    android:textColor="@android:color/black"
-                    android:textSize="@dimen/stats_text_size" />
+                    android:text="@string/inital_score" />
 
             </LinearLayout>
 
@@ -101,7 +82,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal">
-
 
                 <Button
                     android:layout_width="wrap_content"
@@ -114,16 +94,10 @@
 
                 <TextView
                     android:id="@+id/team_a_corners"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="@dimen/margin_small"
+                    style="@style/StatsTextStle"
                     android:layout_marginLeft="@dimen/margin_big"
                     android:layout_marginStart="@dimen/margin_big"
-                    android:background="@color/colorPrimary"
-                    android:text="@string/inital_score"
-                    android:textColor="@android:color/black"
-                    android:textSize="@dimen/stats_text_size" />
+                    android:text="@string/inital_score" />
 
             </LinearLayout>
 
@@ -137,14 +111,8 @@
 
             <TextView
                 android:id="@+id/country2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:padding="@dimen/padding"
-                android:text="@string/team_b"
-                android:textColor="@android:color/white"
-                android:textSize="@dimen/main_text_size"
-                android:textStyle="bold" />
+                style="@style/TeamStyle"
+                android:text="@string/team_b" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -153,16 +121,10 @@
 
                 <TextView
                     android:id="@+id/team_b_score"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="@dimen/margin_small"
+                    style="@style/StatsTextStle"
                     android:layout_marginEnd="@dimen/margin_big"
                     android:layout_marginRight="@dimen/margin_big"
-                    android:background="@color/colorPrimary"
-                    android:text="@string/inital_score"
-                    android:textColor="@android:color/black"
-                    android:textSize="@dimen/stats_text_size" />
+                    android:text="@string/inital_score" />
 
                 <Button
                     android:layout_width="wrap_content"
@@ -182,16 +144,10 @@
 
                 <TextView
                     android:id="@+id/team_b_faults"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="@dimen/margin_small"
+                    style="@style/StatsTextStle"
                     android:layout_marginEnd="@dimen/margin_big"
                     android:layout_marginRight="@dimen/margin_big"
-                    android:background="@color/colorPrimary"
-                    android:text="@string/inital_score"
-                    android:textColor="@android:color/black"
-                    android:textSize="@dimen/stats_text_size" />
+                    android:text="@string/inital_score" />
 
                 <Button
                     android:layout_width="wrap_content"
@@ -202,7 +158,6 @@
                     android:onClick="faultB"
                     android:text="@string/fault" />
 
-
             </LinearLayout>
 
             <LinearLayout
@@ -212,16 +167,10 @@
 
                 <TextView
                     android:id="@+id/team_b_corners"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="@dimen/margin_small"
+                    style="@style/StatsTextStle"
                     android:layout_marginEnd="@dimen/margin_big"
                     android:layout_marginRight="@dimen/margin_big"
-                    android:background="@color/colorPrimary"
-                    android:text="@string/inital_score"
-                    android:textColor="@android:color/black"
-                    android:textSize="@dimen/stats_text_size" />
+                    android:text="@string/inital_score" />
 
                 <Button
                     android:layout_width="wrap_content"
@@ -246,6 +195,5 @@
         android:layout_marginBottom="@dimen/margin_small"
         android:onClick="resetScore"
         android:text="@string/reset" />
-
 
 </RelativeLayout>

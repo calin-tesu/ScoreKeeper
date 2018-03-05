@@ -7,9 +7,12 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    int scoreTeamA = 0, faultsTeamA = 0, cornersTeamA = 0;
-    int scoreTeamB = 0, faultsTeamB = 0, cornersTeamB = 0;
-
+    int scoreTeamA;
+    int faultsTeamA;
+    int cornersTeamA;
+    int scoreTeamB;
+    int faultsTeamB;
+    int cornersTeamB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onSaveInstanceState (Bundle outState) {
-        outState.putInt("scoreA", scoreTeamA );
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putInt("scoreA", scoreTeamA);
         outState.putInt("faultsA", faultsTeamA);
         outState.putInt("cornersA", cornersTeamA);
         outState.putInt("scoreB", scoreTeamB);
@@ -29,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onRestoreInstanceState (Bundle savedInstanceState) {
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
         scoreTeamA = savedInstanceState.getInt("scoreA");
         faultsTeamA = savedInstanceState.getInt("faultsA");
         cornersTeamA = savedInstanceState.getInt("cornersA");
@@ -37,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
         faultsTeamB = savedInstanceState.getInt("faultsB");
         cornersTeamB = savedInstanceState.getInt("cornersB");
         super.onRestoreInstanceState(savedInstanceState);
-
         displayForTeamA(scoreTeamA, faultsTeamA, cornersTeamA);
         displayForTeamB(scoreTeamB, faultsTeamB, cornersTeamB);
     }
@@ -53,11 +55,10 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method is called when the Team A Fault button is clicked
      */
-    public void faultA (View view) {
+    public void faultA(View view) {
         faultsTeamA++;
         displayForTeamA(scoreTeamA, faultsTeamA, cornersTeamA);
     }
-
 
     /**
      * This method is called when the Team A Corner button is clicked
@@ -78,11 +79,10 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method is called when the Team B Fault button is clicked
      */
-    public void faultB (View view) {
+    public void faultB(View view) {
         faultsTeamB++;
         displayForTeamB(scoreTeamB, faultsTeamB, cornersTeamB);
     }
-
 
     /**
      * This method is called when the Team B Corner button is clicked
@@ -109,19 +109,19 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Displays the given scores for Team A
      */
-    public void displayForTeamA(int score,int faults, int corners) {
+    public void displayForTeamA(int score, int faults, int corners) {
         TextView scoreView = findViewById(R.id.team_a_score);
         scoreView.setText(String.valueOf(score));
         TextView faultsView = findViewById(R.id.team_a_faults);
         faultsView.setText(String.valueOf(faults));
-        TextView cornersView =  findViewById(R.id.team_a_corners);
+        TextView cornersView = findViewById(R.id.team_a_corners);
         cornersView.setText(String.valueOf(corners));
     }
 
     /**
      * Displays the given scores for Team B
      */
-    public void displayForTeamB(int score,int faults, int corners) {
+    public void displayForTeamB(int score, int faults, int corners) {
         TextView scoreView = findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(score));
         TextView faultsView = findViewById(R.id.team_b_faults);
@@ -129,6 +129,4 @@ public class MainActivity extends AppCompatActivity {
         TextView cornersView = findViewById(R.id.team_b_corners);
         cornersView.setText(String.valueOf(corners));
     }
-
-
 }
