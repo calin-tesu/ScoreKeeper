@@ -8,7 +8,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     int scoreTeamA = 0, faultsTeamA = 0, cornersTeamA = 0;
-    int scoreTeamB = 0,  faultsTeamB = 0, cornersTeamB = 0;
+    int scoreTeamB = 0, faultsTeamB = 0, cornersTeamB = 0;
 
 
     @Override
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the Team A Goal button is clicked
      */
     public void goalA(View view) {
-        scoreTeamA = scoreTeamA + 1;
+        scoreTeamA++;
         displayForTeamA(scoreTeamA, faultsTeamA, cornersTeamA);
     }
 
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the Team A Fault button is clicked
      */
     public void faultA (View view) {
-        faultsTeamA=faultsTeamA + 1;
+        faultsTeamA++;
         displayForTeamA(scoreTeamA, faultsTeamA, cornersTeamA);
     }
 
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the Team A Corner button is clicked
      */
     public void cornerA(View view) {
-        cornersTeamA = cornersTeamA + 1;
+        cornersTeamA++;
         displayForTeamA(scoreTeamA, faultsTeamA, cornersTeamA);
     }
 
@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the Team B Goal button is clicked
      */
     public void goalB(View view) {
-        scoreTeamB = scoreTeamB + 1;
+        scoreTeamB++;
         displayForTeamB(scoreTeamB, faultsTeamB, cornersTeamB);
     }
 
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the Team B Fault button is clicked
      */
     public void faultB (View view) {
-        faultsTeamB = faultsTeamB + 1;
+        faultsTeamB++;
         displayForTeamB(scoreTeamB, faultsTeamB, cornersTeamB);
     }
 
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the Team B Corner button is clicked
      */
     public void cornerB(View view) {
-        cornersTeamB = cornersTeamB + 1;
+        cornersTeamB++;
         displayForTeamB(scoreTeamB, faultsTeamB, cornersTeamB);
     }
 
